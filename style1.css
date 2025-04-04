@@ -1,0 +1,54 @@
+.images{
+  display: flex;
+  width: 100%;
+  transition: 2s;
+}
+.images img{
+  width: 100%;
+}
+
+.wrapper{
+  width: 235px;
+  margin: auto;
+  padding: auto;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+#slide1:target~ .images{
+  margin-left: 0px;
+}
+
+#slide2:target~ .images{
+  margin-left: -100%;
+}
+
+#slide3:target~ .images{
+  margin-left: -200%;
+}
+
+#slide4:target~ .images{
+  margin-left: -300%;
+}
+
+.navigation{
+  text-align: center;
+  position: center;
+}
+
+.navigation a{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #dede;
+  font-size: 0px;
+  margin: 3px;
+  border-radius: 50px;
+  transition: 2s;
+  
+}
+
+.navigation a:hover{
+  background-color: #666;
+  
+}
